@@ -17,7 +17,7 @@ function App() {
   var x=" "
   // const [i,seti] = useState(0)
   var k
-  // const[clear,setclear] = useState(null);
+  const[clear,setclear] = useState(null);
   const [im,setim] = useState(one);
   const bgchange = () => 
   { 
@@ -30,11 +30,11 @@ function App() {
     //   {seti(0)
     //     }
     setim(x)  
-    // clearInterval(clear)
+    clearInterval(clear)
   }
   useEffect( () => {
-    // setclear(setInterval(bgchange, 5000));
-    setTimeout(bgchange,5000)
+    setclear(setInterval(bgchange, 5000));
+    // setTimeout(bgchange,5000)
    }, [] )
   return (
     <div className="App">
