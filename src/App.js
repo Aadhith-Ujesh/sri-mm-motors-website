@@ -20,7 +20,7 @@ function App() {
   const[clear,setclear] = useState(null);
   const [im,setim] = useState(one);
   const bgchange = () => 
-  { 
+{ 
     console.log('Im here');
     // k=Math.floor(Math.random()*arr.length)
     // x = arr[k]
