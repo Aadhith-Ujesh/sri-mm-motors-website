@@ -1,23 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './Navbar'
+import Home from './Home'
+import Contact from './Contact'
+import About from './About'
+import Services from './Services'
+import { Route, Switch } from 'react-router-dom';
+import { useState , useEffect } from 'react'
+import one from './12.jpg'
+import two from './13.jpg'
+import three from './14.jpg'
+import four from './16.jpg'
+import five from './15.jpg'
+
 
 function App() {
+  const arr = [one,two,three,four,five];
+  var x=" "
+  const [i,seti] = useState
+  var k
+  const[clear,setclear] = useState(null);
+  const [im,setim] = useState(one);
+  const bgchange = () => 
+  { 
+    console.log('Im here');
+    // k=Math.floor(Math.random()*arr.length)
+    // x = arr[k]
+    x=arr[i]
+    i+=1
+    if(i===4)
+      {i=0}
+    setim(x)  
+    clearInterval(clear)
+  }
+  useEffect( () => {
+    setclear(setInterval(bgchange, 5000));
+   }, [] )
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="bg-img">
+        <img src={ im } alt="hi"/>
+        <Navbar/>
+      </div>
+            <div className="content">
+              <Switch> 
+               <Route exact path="/">
+                  <Home/>
+                </Route>
+                <Route exact path="/contact">
+                  <Contact/>
+                </Route>
+                <Route exact path="/about">
+                  <About/>
+                </Route>
+                <Route exact path="/services">
+                  <Services/>
+               </Route>
+              </Switch>
+            </div>          
     </div>
   );
 }
