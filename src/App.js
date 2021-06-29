@@ -15,24 +15,26 @@ import five from './15.jpg'
 function App() {
   const arr = [one,two,three,four,five];
   var x=" "
-  const [i,seti] = useState
+  // const [i,seti] = useState(0)
   var k
-  const[clear,setclear] = useState(null);
+  // const[clear,setclear] = useState(null);
   const [im,setim] = useState(one);
   const bgchange = () => 
-{ 
+  { 
     console.log('Im here');
-    // k=Math.floor(Math.random()*arr.length)
-    // x = arr[k]
-    x=arr[i]
-    i+=1
-    if(i===4)
-      {i=0}
+    k=Math.floor(Math.random()*arr.length)
+    x = arr[k]
+    // x=arr[i]
+    // seti(i+1)
+    // if(i===5)
+    //   {seti(0)
+    //     }
     setim(x)  
-    clearInterval(clear)
+    // clearInterval(clear)
   }
   useEffect( () => {
-    setclear(setInterval(bgchange, 5000));
+    // setclear(setInterval(bgchange, 5000));
+    setTimeout(bgchange,5000)
    }, [] )
   return (
     <div className="App">
