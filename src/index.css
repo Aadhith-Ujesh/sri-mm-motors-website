@@ -38,7 +38,16 @@
   width: 100vw;
   background:rgb(255, 255, 255 , 0.4);
 }
-
+.typer{
+  padding: 50px;
+  position: relative;
+  top: 50%;
+  display:flex;
+  margin-left: 25%;
+  font-weight:800;
+  font-size:40px;
+  background:white
+}
 .navbar h1 {
 
   color: black;
@@ -85,8 +94,13 @@
   top: 70px;
   margin: 30px auto;
   padding: 20px;
-
+  max-width: 1000px;
+  
 }
+.text{
+  margin-left: 20%;
+}
+
 ul {
   list-style-type: none;
   margin: 0;

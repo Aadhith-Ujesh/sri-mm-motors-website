@@ -6,6 +6,7 @@ import three from './14.jpg'
 import four from './16.jpg'
 import five from './15.jpg'
 
+
 const Home = () => {
     const arr = [one,two,three,four,five];
   var x=" "
@@ -27,6 +28,7 @@ const Home = () => {
         <div class="bg-img">
             <img id="homebg" src={ im } alt="hi"/>
             <Navbar/>
+            
         </div>
      );
 }
