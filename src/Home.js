@@ -1,10 +1,10 @@
 import Navbar from './Navbar'
 import { useState , useEffect } from 'react'
-import one from './12.jpg'
-import two from './13.jpg'
-import three from './14.jpg'
-import four from './16.jpg'
-import five from './15.jpg'
+import one from './images/12.jpg'
+import two from './images/13.jpg'
+import three from './images/14.jpg'
+import four from './images/16.jpg'
+import five from './images/15.jpg'
 
 
 const Home = () => {

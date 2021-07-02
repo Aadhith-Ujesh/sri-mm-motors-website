@@ -1,17 +1,15 @@
-import Navbar from "./Navbar"
-import i1 from "./off1.jpg"
-import i2 from "./off2.jpg"
-import i3 from "./off3.jpg"
-import i4 from "./off4.jpg"
-import i5 from "./off5.jpg"
+import Navbar2 from "./Navbar2"
+import i1 from "./images/off1.jpg"
+import i2 from "./images/off2.jpg"
+import i3 from "./images/off3.jpg"
+import i4 from "./images/off4.jpg"
+import i5 from "./images/off5.jpg"
 import Typewriter from "typewriter-effect";
 
 const About = () => {
     return ( 
         <div>
-            
-                <Navbar />
-            
+            <Navbar2/>
             <div className="cont">
                 <div className="text">
                 <p style={{color:"black",fontWeight:"bold"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis elit sit amet massa maximus malesuada. Vestibulum vitae nisl sed neque imperdiet viverra eu sit amet mi. Nullam a mi et enim convallis varius. Curabitur id rutrum nisl. Nam ante mi, rhoncus fermentum pharetra ut, aliquam ac ipsum. Praesent imperdiet in sem ac iaculis. Nam vulputate lectus a faucibus viverra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris hendrerit nibh a mauris malesuada, ac blandit risus sagittis. Donec eu diam quis mi consequat pharetra. Nullam pulvinar justo a neque lacinia, euismod varius mauris porttitor. Nulla facilisi. Phasellus semper posuere metus vitae accumsan. Nulla facilisi.
@@ -80,8 +78,6 @@ Nam sed faucibus metus. Fusce ut posuere lacus. Donec congue venenatis risus, vi
             </div>
             </div>
         </div>
-            
-        
      );
 }
  
